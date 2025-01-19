@@ -13,12 +13,12 @@ document.close();
 });
 
 describe("DOM tests", () => {
-    test("expects p content to change", () => {
+    test("Expects content to change", () => {
         buttonClick();
-        expect(document.getElementById(`p`).innerHTML).toEqual("You Clicked");
+        expect(document.getElementById("par")
+            .innerHTML).toEqual("You Clicked");
     });
-
-    test("h1 should exit", () => {
-        expect(document.getElementsByTagName("h1)").length.toBe(1));
+    test("h1 should exist", () => {
+        expect(document.getElementsByTagName("h1").length).toBe(1);
     });
 });
