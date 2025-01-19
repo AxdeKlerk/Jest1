@@ -1,6 +1,6 @@
-/**
- * @jest-environment jsdom
- */
+/*
+ @jest-environment jsdom
+*/
 
 const addition = require ("../calc");
 

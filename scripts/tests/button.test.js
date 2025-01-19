@@ -1,4 +1,7 @@
-const { TestScheduler } = require("jest");
+/*
+ @jest-environment jsdom
+*/
+
 const buttonClick = require ("../button");
 
 beforeEach(() => {
@@ -6,7 +9,7 @@ beforeEach(() => {
 });
 
 describe("DOM tests", () => {
-    Test("expects p content to change", () = > {
+    Test("expects p content to change", () => {
         buttonClick();
         expect(document.getElementById(`p`).innerHTML).toEqual("You Clicked");
     });
