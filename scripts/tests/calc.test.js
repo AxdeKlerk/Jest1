@@ -1,4 +1,4 @@
-const addition = require ("../calc");
+const addition = require ("../calc")
 
 describe ("Calculator", () => {
     describe ("Addition function", () => {
