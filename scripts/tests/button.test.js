@@ -13,7 +13,7 @@ document.close();
 });
 
 describe("DOM tests", () => {
-    Test("expects p content to change", () => {
+    test("expects p content to change", () => {
         buttonClick();
         expect(document.getElementById(`p`).innerHTML).toEqual("You Clicked");
     });
