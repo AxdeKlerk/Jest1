@@ -5,12 +5,20 @@
 const buttonClick = require ("../button");
 
 beforeEach(() => {
-    document.body.innerHTML = "<p id =`p`></>";
+let fs = require("fs");
+let fileContents = fs.readFileSync("index.html", "utf-8");
+document.open();
+document.write(fileContents);
+document.close();
 });
 
 describe("DOM tests", () => {
     Test("expects p content to change", () => {
         buttonClick();
         expect(document.getElementById(`p`).innerHTML).toEqual("You Clicked");
+    });
+
+    test("h1 should exit", () => {
+        expect(document.getElementsByTagName("h1)").length.toBe(1));
     });
 });
